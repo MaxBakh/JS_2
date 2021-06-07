@@ -1,0 +1,30 @@
+<script>
+
+    console.log("One: 'Hi Mary.' ".replace(/'/mg, ' " '));
+    console.log("Two: 'Oh, hi.' ".replace(/'/mg, ' " '));
+    console.log("One: 'How are you doing?' ".replace(/'/mg, ' " '));
+    console.log("Two: 'I'm doing alright. How about you?' ".replace(/[^I'm]'/g, ' " '));
+    console.log("  One: 'Not too bad. The weather is great isn't it?' ".replace(/[^isn't]'/g, ' " '));
+    console.log(" Two: 'Yes. It's absolutely beautiful today.' ".replace(/[^It's ]'/g, ' " '));
+    console.log("One: 'I wish it was like this more frequently.' ".replace(/'/mg, ' " '));
+    console.log("Two: 'Me too.'".replace(/'/mg, ' " '));
+    console.log("One: 'So where are you going now?' ".replace(/'/mg, ' " '));
+    console.log("Two: 'I'm going to meet a friend of mine at the department store.'".replace(/[^I'm]'/g, ' " '));
+    console.log("One: 'Going to do a little shopping?' ".replace(/'/mg, ' " '));
+    console.log("Two: 'Yeah, I have to buy some presents for my parents.' ".replace(/'/mg, ' " '));
+    console.log("One: 'What's the occasion?' ".replace(/[^What's]'/g, ' " '));
+    console.log("  Two: 'It's their anniversary.' ".replace(/[^It's ]'/g, ' " '));
+    console.log("One: 'That's great. Well, you better get going. You don't want to be late.' ".replace(/[^That's ]'/g, ' " '));
+    console.log("Two: 'I'll see you next time.' ".replace(/[^I'll]'/g, ' " '));
+    console.log("One: 'Sure. Bye.' ".replace(/'/mg, ' " '));
+
+
+
+    // let txt = "Two: 'I'm doing alright. How about you?' ";
+    // let changes1 = txt.replace(/[^I'm]'/g, ' " ');
+    // document.write(changes1);
+
+
+
+
+</script>

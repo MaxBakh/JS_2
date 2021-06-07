@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="style.css">
+
+<div class="main">
+    <form action="#" method="POST" class="form">
+
+    </form>
+</div>
+
+
+
+
+<script>
+    document.querySelector('.form').insertAdjacentHTML('beforeend', '<input id="name" type="text" placeholder="Иван"><label for="name">Имя</label><br>');
+    document.querySelector('.form').insertAdjacentHTML('beforeend', '<input id="tel" type="tel" placeholder="+7(000)000-00-00"><label for="tel"> Телефон</label><br>');
+    document.querySelector('.form').insertAdjacentHTML('beforeend', '<input id="mail" type="email" placeholder="email@mail.ru"><label for="mail">EMAIL</label><br>');
+    document.querySelector('.form').insertAdjacentHTML('beforeend', '<input id="txt" type="text" placeholder="Введите текст"><label for="txt">Введите текст</label><br>');
+    document.querySelector('.form').insertAdjacentHTML('beforeend', '<input id="btn" type="submit" value="Submit"><br>');
+
+
+
+
+
+    // Нужно взять каждый input и проверить его содержимое. Если пусто, то показать предложение "необходимо заполнить"
+    // Если есть какие-то символы, проверить на корректность заполнения
+
+
+
+
+
+    let email = document.getElementById("mail");
+    email.addEventListener("input", (event) => {
+        if (email.validity.typeMismatch) {
+            email.setCustomValidity("Допустимые значения[a-zA-Z0-9_-]@[a-zA-Z0-9_-].[a-zA-Z]");
+        } else {
+            email.setCustomValidity(" ");
+        }
+    });
+
+</script>
